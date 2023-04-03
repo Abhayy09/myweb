@@ -47,7 +47,7 @@
 		}
 		.grid {
 			display: grid;
-			grid-template-columns: repeat(1, 1fr);
+			grid-template-columns: repeat(3, 1fr);
 			grid-gap: 20px;
 			max-width: 90%;
 			margin: 0 auto;
@@ -77,63 +77,92 @@
 			border-radius: 50%;
 			margin-bottom: 10px;
 		}
-	.card h3 {
-	font-size: 20px;
-	margin: 0;
-	margin-top: 10px;
-	margin-bottom: 5px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #333333;
-	text-align: center;
+		.card h3 {
+			font-size: 18px;
+margin: 0;
+margin-bottom: 5px;
+font-weight: 700;
+color: #333333;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 1px;
+}.card p {
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+color: #777777;
+margin: 0;
+margin-bottom: 20px;
 }
-		.card p {
-			font-size: 16px;
-			margin-top: 10px;
-			margin-bottom: 0;
-			color: #777777;
-			text-align: center;
-		}
-		.card a {
-			display: inline-block;
-			margin-top: 10px;
-			padding: 10px 20px;
-			background-color: #333333;
-			color: #FFFFFF;
-			border-radius: 5px;
-			text-decoration: none;
-			transition: background-color 0.3s ease-in-out;
-		}
-		.card a:hover {
-			background-color: #555555;
-		}
-	</style>
+.card a {
+font-size: 16px;
+font-weight: 700;
+color: #333333;
+text-decoration: none;
+transition: color 0.3s ease-in-out;
+}
+.card a:hover {
+color: #FF6B6B;
+}
+.card i {
+font-size: 24px;
+color: #FF6B6B;
+margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+.grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
+
 </head>
 <body>
 	<header>
 		<h1>My Social Media Links</h1>
 	</header>
 	<main>
-		<div class="grid">
-			<div class="card">
-				<img src="https://via.placeholder.com/80" alt="Profile picture">
-				<h3>Facebook</h3>
-				<p>Connect with me on Facebook to stay updated.</p>
-				<a href="#">Follow me</a>
+		<section>
+			<h2>Follow Me On</h2>
+			<div class="grid">
+				<div class="card">
+					<img src="https://via.placeholder.com/80" alt="Facebook">
+					<h3>Facebook</h3>
+					<p>Connect with me on Facebook to see my latest updates and posts.</p>
+					<a href="#">Follow</a>
+				</div>
+				<div class="card">
+					<img src="https://via.placeholder.com/80" alt="Twitter">
+					<h3>Twitter</h3>
+					<p>Follow me on Twitter to stay updated on my latest tweets and thoughts.</p>
+					<a href="#">Follow</a>
+				</div>
+				<div class="card">
+					<img src="https://via.placeholder.com/80" alt="Instagram">
+					<h3>Instagram</h3>
+					<p>Check out my Instagram profile for my latest photos and stories.</p>
+					<a href="#">Follow</a>
+				</div>
+				<div class="card">
+					<img src="https://via.placeholder.com/80" alt="LinkedIn">
+					<h3>LinkedIn</h3>
+					<p>Connect with me on LinkedIn to stay updated on my professional achievements.</p>
+					<a href="#">Follow</a>
+				</div>
+				<div class="card">
+					<img src="https://via.placeholder.com/80" alt="GitHub">
+					<h3>GitHub</h3>
+					<p>View my GitHub profile for my latest open source projects and contributions.</p>
+					<a href="#">Follow</a>
+				</div>
+				<div class="card">
+					<img src="https://via.placeholder.com/80" alt="YouTube">
+					<h3>YouTube</h3>
+					<p>Subscribe to my YouTube channel for my latest videos and tutorials.</p>
+					<a href="#">Follow</a>
+				</div>
 			</div>
-			<div class="card">
-				<img src="https://via.placeholder.com/80" alt="Profile picture">
-				<h3>Twitter</h3>
-				<p>Follow me on Twitter for daily updates.</p>
-				<a href="#">Follow me</a>
-			</div>
-			<div class="card">
-				<img src="https://via.placeholder.com/80" alt="Profile picture">
-				<h3>Instagram</h3>
-				<p>Follow me on Instagram to see my latest photos.</p>
-				<a href="#">Follow me</a>
-			</div>
-		</div>
+		</section>
 	</main>
 </body>
 </html>
