@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Home Page</title>
-	<link rel="stylesheet" type="text/css" href="https://github.com/Abhayy09/myweb/raw/main/style.css"/>
-
-</head>
-<body>
-	<h1>Welcome to My Home Page</h1>
-	<h2>Links</h2>
-	<ul>
-		<li><a href="https://www.facebook.com">Facebook</a></li>
-		<li><a href="https://www.instagram.com">Instagram</a></li>
-		<li><a href="https://www.pinterest.com">Pinterest</a></li>
-		<li><a href="https://www.youtube.com">YouTube</a></li>
-	</ul>
-</body>
-</html>
+	<title>My Social Media Links</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-mCzoJ7yzx1S8u6+44T1DlLVi/eXpPf8E6y+e6yZXn6n+wU2WJUOn6TmD0Tow7v9XWBUh8a6yHak6U0+s6UxW6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #F5F5F5;
+			color: #333333;
+			line-height: 1.5;
+		}
+		header {
+			background-color: #333333;
+			padding: 20px;
+			text-align: center;
+			margin-bottom: 50px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		h1 {
+			font-size: 60px;
+			margin: 0;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+			color: #FFFFFF;
+			text-align: center;
+			max-width: 800px;
+			line-height: 1.2;
+		}
+		h2 {
+			font-size: 30px;
+			margin: 0;
+			margin-top: 50px;
+			margin-bottom: 30px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #333333;
+			text-align: center;
+			letter-spacing: 2px;
+		}
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 50px;
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+		}
+		.card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			background-color: #F5F5F5;
+			border-radius: 10px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+			transition
